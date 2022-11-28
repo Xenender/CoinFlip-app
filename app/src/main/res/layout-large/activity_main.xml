@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/LayoutMainAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+            <!-- Light Layout -->
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/LAnimLaunchLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp">
+
+
+                    <ImageView
+                        android:id="@+id/pileHLight"
+                        android:layout_width="430dp"
+                        android:layout_height="430dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/pile3"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/faceBLight"
+                        android:layout_width="430dp"
+                        android:layout_height="430dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/pile2" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/pileWinLight"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/pile7" />
+
+                <ImageView
+                    android:id="@+id/pileBLight"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/pile4" />
+
+                <ImageView
+                    android:id="@+id/faceHLight"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/pile5" />
+
+                <ImageView
+
+                    android:id="@+id/faceWinLight"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/pile6" />
+
+                <ImageView
+                    android:id="@+id/imgToolsLight"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/pile8" />
+
+            </RelativeLayout>
+
+
+            <!-- Dark Layout -->
+
+            <RelativeLayout
+                android:id="@+id/mainLayoutDark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/LAnimLaunchDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp">
+
+
+                    <ImageView
+                        android:id="@+id/pileHDark"
+                        android:layout_width="430dp"
+                        android:layout_height="430dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/pile_h_dark"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/faceBDark"
+                        android:layout_width="430dp"
+                        android:layout_height="430dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/face_b_dark" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/pileWinDark"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/pile_win_dark" />
+
+                <ImageView
+                    android:id="@+id/pileBDark"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/pile_b_dark" />
+
+                <ImageView
+                    android:id="@+id/faceHDark"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/face_h_dark" />
+
+                <ImageView
+
+                    android:id="@+id/faceWinDark"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/face_win_dark" />
+
+
+                <ImageView
+                    android:id="@+id/imgToolsDark"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/tools_dark" />
+
+
+            </RelativeLayout>
+
+
+            <!-- All items  196dp  232dp-->
+
+
+            <Button
+                android:id="@+id/mainLaunch"
+                android:layout_width="300dp"
+                android:layout_height="360dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                >
+            </Button>
+
+            <TextView
+                android:id="@+id/textPileWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="99dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/helvetica_compressed"
+                android:letterSpacing="0.12"
+                android:text="Pile"
+                android:textColor="#000000"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textFaceWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="99dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/helvetica_compressed"
+                android:letterSpacing="0.12"
+                android:text="Face"
+                android:textColor="#000000"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/mainToolsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@android:color/transparent"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/mainColorButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="52dp"
+                android:background="@android:color/transparent"
+                android:stateListAnimator="@null" />
+
+
+            <ImageView
+                android:id="@+id/mainImgColor"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/pile7" />
+
+
+            <RelativeLayout
+                android:id="@+id/LToolsBlack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9A000000"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/mainToolsLayout"
+                android:layout_width="350dp"
+                android:layout_height="330dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+
+                android:background="@drawable/layout_tools"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:id="@+id/toolsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:textSize="50dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/helvetica_compressed"
+                    android:text="Sound effects">
+
+                </TextView>
+
+
+                <RelativeLayout
+                    android:id="@+id/LToolsSlide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!-- dimention parametre : layout pour la slide -->
+
+                </RelativeLayout>
+
+                <Switch
+                    android:id="@+id/switchMusic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120dp"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+
+                    android:thumb="@drawable/customswitchselector"
+                    android:track="@drawable/custom_track" />
+
+
+                <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/helvetica_compressed"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
